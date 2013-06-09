@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1136F5917221A7C00AE97E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1136F5817221A7C00AE97E2 /* UIKit.framework */; };
+		B1136F5B17221A7C00AE97E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1136F5A17221A7C00AE97E2 /* Foundation.framework */; };
+		B1136F5D17221A7C00AE97E2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1136F5C17221A7C00AE97E2 /* CoreGraphics.framework */; };
+		B1136F6317221A7C00AE97E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1136F6117221A7C00AE97E2 /* InfoPlist.strings */; };
+		B1136F6517221A7C00AE97E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1136F6417221A7C00AE97E2 /* main.m */; };
+		B1136F6917221A7C00AE97E2 /* MPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1136F6817221A7C00AE97E2 /* MPAppDelegate.m */; };
+		B1136F6B17221A7C00AE97E2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B1136F6A17221A7C00AE97E2 /* Default.png */; };
+		B1136F6D17221A7C00AE97E2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1136F6C17221A7C00AE97E2 /* Default@2x.png */; };
+		B1136F6F17221A7C00AE97E2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1136F6E17221A7C00AE97E2 /* Default-568h@2x.png */; };
+		B1136F7517221A7C00AE97E2 /* MPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1136F7417221A7C00AE97E2 /* MPViewController.m */; };
+		B1136F7D17221A7C00AE97E2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1136F7C17221A7C00AE97E2 /* SenTestingKit.framework */; };
+		B1136F7E17221A7C00AE97E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1136F5817221A7C00AE97E2 /* UIKit.framework */; };
+		B1136F7F17221A7C00AE97E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1136F5A17221A7C00AE97E2 /* Foundation.framework */; };
+		B1136F8717221A7C00AE97E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1136F8517221A7C00AE97E2 /* InfoPlist.strings */; };
+		B1136F8A17221A7C00AE97E2 /* AugmentedRealityNavigatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1136F8917221A7C00AE97E2 /* AugmentedRealityNavigatorTests.m */; };
+		B1136F9717221AA600AE97E2 /* ARView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1136F9417221AA600AE97E2 /* ARView.m */; };
+		B1136F9817221AA600AE97E2 /* PlaceOfInterest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1136F9617221AA600AE97E2 /* PlaceOfInterest.m */; };
+		B1136F9B17221AD400AE97E2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1136F9A17221AD400AE97E2 /* CoreLocation.framework */; };
+		B1136F9D17221ADE00AE97E2 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1136F9C17221ADE00AE97E2 /* OpenGLES.framework */; };
+		B1136F9F17221AE700AE97E2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1136F9E17221AE700AE97E2 /* QuartzCore.framework */; };
+		B1136FA117221AF600AE97E2 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1136FA017221AF600AE97E2 /* CoreMotion.framework */; };
+		B1136FA317221AFF00AE97E2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1136FA217221AFF00AE97E2 /* AVFoundation.framework */; };
+		B1136FA517221C4100AE97E2 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1136FA417221C4100AE97E2 /* AssetsLibrary.framework */; };
+		B1136FA71722205400AE97E2 /* pARkViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1136FA61722205400AE97E2 /* pARkViewController_iPhone.xib */; };
+		B1136FAA172222A600AE97E2 /* MPGetPOI.m in Sources */ = {isa = PBXBuildFile; fileRef = B1136FA9172222A600AE97E2 /* MPGetPOI.m */; };
+		B1136FB01722FAB000AE97E2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1136FAF1722FAB000AE97E2 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1136F8017221A7C00AE97E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1136F4D17221A7C00AE97E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1136F5417221A7C00AE97E2;
+			remoteInfo = AugmentedRealityNavigator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B1136F5517221A7C00AE97E2 /* AugmentedRealityNavigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AugmentedRealityNavigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1136F5817221A7C00AE97E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B1136F5A17221A7C00AE97E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B1136F5C17221A7C00AE97E2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B1136F6017221A7C00AE97E2 /* AugmentedRealityNavigator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AugmentedRealityNavigator-Info.plist"; sourceTree = "<group>"; };
+		B1136F6217221A7C00AE97E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1136F6417221A7C00AE97E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1136F6617221A7C00AE97E2 /* AugmentedRealityNavigator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AugmentedRealityNavigator-Prefix.pch"; sourceTree = "<group>"; };
+		B1136F6717221A7C00AE97E2 /* MPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPAppDelegate.h; sourceTree = "<group>"; };
+		B1136F6817221A7C00AE97E2 /* MPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPAppDelegate.m; sourceTree = "<group>"; };
+		B1136F6A17221A7C00AE97E2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B1136F6C17221A7C00AE97E2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B1136F6E17221A7C00AE97E2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B1136F7317221A7C00AE97E2 /* MPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPViewController.h; sourceTree = "<group>"; };
+		B1136F7417221A7C00AE97E2 /* MPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPViewController.m; sourceTree = "<group>"; };
+		B1136F7B17221A7C00AE97E2 /* AugmentedRealityNavigatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AugmentedRealityNavigatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1136F7C17221A7C00AE97E2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B1136F8417221A7C00AE97E2 /* AugmentedRealityNavigatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AugmentedRealityNavigatorTests-Info.plist"; sourceTree = "<group>"; };
+		B1136F8617221A7C00AE97E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1136F8817221A7C00AE97E2 /* AugmentedRealityNavigatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AugmentedRealityNavigatorTests.h; sourceTree = "<group>"; };
+		B1136F8917221A7C00AE97E2 /* AugmentedRealityNavigatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AugmentedRealityNavigatorTests.m; sourceTree = "<group>"; };
+		B1136F9317221AA600AE97E2 /* ARView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARView.h; sourceTree = "<group>"; };
+		B1136F9417221AA600AE97E2 /* ARView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARView.m; sourceTree = "<group>"; };
+		B1136F9517221AA600AE97E2 /* PlaceOfInterest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceOfInterest.h; sourceTree = "<group>"; };
+		B1136F9617221AA600AE97E2 /* PlaceOfInterest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceOfInterest.m; sourceTree = "<group>"; };
+		B1136F9A17221AD400AE97E2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B1136F9C17221ADE00AE97E2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		B1136F9E17221AE700AE97E2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B1136FA017221AF600AE97E2 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		B1136FA217221AFF00AE97E2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B1136FA417221C4100AE97E2 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		B1136FA61722205400AE97E2 /* pARkViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pARkViewController_iPhone.xib; sourceTree = "<group>"; };
+		B1136FA8172222A600AE97E2 /* MPGetPOI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGetPOI.h; sourceTree = "<group>"; };
+		B1136FA9172222A600AE97E2 /* MPGetPOI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPGetPOI.m; sourceTree = "<group>"; };
+		B1136FAC1722257900AE97E2 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		B1136FAF1722FAB000AE97E2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1136F5217221A7C00AE97E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1136FB01722FAB000AE97E2 /* MapKit.framework in Frameworks */,
+				B1136FA517221C4100AE97E2 /* AssetsLibrary.framework in Frameworks */,
+				B1136FA317221AFF00AE97E2 /* AVFoundation.framework in Frameworks */,
+				B1136FA117221AF600AE97E2 /* CoreMotion.framework in Frameworks */,
+				B1136F9F17221AE700AE97E2 /* QuartzCore.framework in Frameworks */,
+				B1136F9D17221ADE00AE97E2 /* OpenGLES.framework in Frameworks */,
+				B1136F9B17221AD400AE97E2 /* CoreLocation.framework in Frameworks */,
+				B1136F5917221A7C00AE97E2 /* UIKit.framework in Frameworks */,
+				B1136F5B17221A7C00AE97E2 /* Foundation.framework in Frameworks */,
+				B1136F5D17221A7C00AE97E2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1136F7717221A7C00AE97E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1136F7D17221A7C00AE97E2 /* SenTestingKit.framework in Frameworks */,
+				B1136F7E17221A7C00AE97E2 /* UIKit.framework in Frameworks */,
+				B1136F7F17221A7C00AE97E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1136F4C17221A7C00AE97E2 = {
+			isa = PBXGroup;
+			children = (
+				B1136FAF1722FAB000AE97E2 /* MapKit.framework */,
+				B1136FAC1722257900AE97E2 /* Header.h */,
+				B1136FA8172222A600AE97E2 /* MPGetPOI.h */,
+				B1136FA9172222A600AE97E2 /* MPGetPOI.m */,
+				B1136FA417221C4100AE97E2 /* AssetsLibrary.framework */,
+				B1136FA217221AFF00AE97E2 /* AVFoundation.framework */,
+				B1136FA017221AF600AE97E2 /* CoreMotion.framework */,
+				B1136F9E17221AE700AE97E2 /* QuartzCore.framework */,
+				B1136F9C17221ADE00AE97E2 /* OpenGLES.framework */,
+				B1136F9A17221AD400AE97E2 /* CoreLocation.framework */,
+				B1136F9917221AAB00AE97E2 /* AR */,
+				B1136F5E17221A7C00AE97E2 /* AugmentedRealityNavigator */,
+				B1136F8217221A7C00AE97E2 /* AugmentedRealityNavigatorTests */,
+				B1136F5717221A7C00AE97E2 /* Frameworks */,
+				B1136F5617221A7C00AE97E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1136F5617221A7C00AE97E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1136F5517221A7C00AE97E2 /* AugmentedRealityNavigator.app */,
+				B1136F7B17221A7C00AE97E2 /* AugmentedRealityNavigatorTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1136F5717221A7C00AE97E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1136F5817221A7C00AE97E2 /* UIKit.framework */,
+				B1136F5A17221A7C00AE97E2 /* Foundation.framework */,
+				B1136F5C17221A7C00AE97E2 /* CoreGraphics.framework */,
+				B1136F7C17221A7C00AE97E2 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1136F5E17221A7C00AE97E2 /* AugmentedRealityNavigator */ = {
+			isa = PBXGroup;
+			children = (
+				B1136F6717221A7C00AE97E2 /* MPAppDelegate.h */,
+				B1136F6817221A7C00AE97E2 /* MPAppDelegate.m */,
+				B1136F7317221A7C00AE97E2 /* MPViewController.h */,
+				B1136F7417221A7C00AE97E2 /* MPViewController.m */,
+				B1136FA61722205400AE97E2 /* pARkViewController_iPhone.xib */,
+				B1136F5F17221A7C00AE97E2 /* Supporting Files */,
+			);
+			path = AugmentedRealityNavigator;
+			sourceTree = "<group>";
+		};
+		B1136F5F17221A7C00AE97E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1136F6017221A7C00AE97E2 /* AugmentedRealityNavigator-Info.plist */,
+				B1136F6117221A7C00AE97E2 /* InfoPlist.strings */,
+				B1136F6417221A7C00AE97E2 /* main.m */,
+				B1136F6617221A7C00AE97E2 /* AugmentedRealityNavigator-Prefix.pch */,
+				B1136F6A17221A7C00AE97E2 /* Default.png */,
+				B1136F6C17221A7C00AE97E2 /* Default@2x.png */,
+				B1136F6E17221A7C00AE97E2 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1136F8217221A7C00AE97E2 /* AugmentedRealityNavigatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1136F8817221A7C00AE97E2 /* AugmentedRealityNavigatorTests.h */,
+				B1136F8917221A7C00AE97E2 /* AugmentedRealityNavigatorTests.m */,
+				B1136F8317221A7C00AE97E2 /* Supporting Files */,
+			);
+			path = AugmentedRealityNavigatorTests;
+			sourceTree = "<group>";
+		};
+		B1136F8317221A7C00AE97E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1136F8417221A7C00AE97E2 /* AugmentedRealityNavigatorTests-Info.plist */,
+				B1136F8517221A7C00AE97E2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1136F9917221AAB00AE97E2 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				B1136F9317221AA600AE97E2 /* ARView.h */,
+				B1136F9417221AA600AE97E2 /* ARView.m */,
+				B1136F9517221AA600AE97E2 /* PlaceOfInterest.h */,
+				B1136F9617221AA600AE97E2 /* PlaceOfInterest.m */,
+			);
+			name = AR;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1136F5417221A7C00AE97E2 /* AugmentedRealityNavigator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1136F8D17221A7C00AE97E2 /* Build configuration list for PBXNativeTarget "AugmentedRealityNavigator" */;
+			buildPhases = (
+				B1136F5117221A7C00AE97E2 /* Sources */,
+				B1136F5217221A7C00AE97E2 /* Frameworks */,
+				B1136F5317221A7C00AE97E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AugmentedRealityNavigator;
+			productName = AugmentedRealityNavigator;
+			productReference = B1136F5517221A7C00AE97E2 /* AugmentedRealityNavigator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1136F7A17221A7C00AE97E2 /* AugmentedRealityNavigatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1136F9017221A7C00AE97E2 /* Build configuration list for PBXNativeTarget "AugmentedRealityNavigatorTests" */;
+			buildPhases = (
+				B1136F7617221A7C00AE97E2 /* Sources */,
+				B1136F7717221A7C00AE97E2 /* Frameworks */,
+				B1136F7817221A7C00AE97E2 /* Resources */,
+				B1136F7917221A7C00AE97E2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1136F8117221A7C00AE97E2 /* PBXTargetDependency */,
+			);
+			name = AugmentedRealityNavigatorTests;
+			productName = AugmentedRealityNavigatorTests;
+			productReference = B1136F7B17221A7C00AE97E2 /* AugmentedRealityNavigatorTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1136F4D17221A7C00AE97E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MP;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = MPow;
+			};
+			buildConfigurationList = B1136F5017221A7C00AE97E2 /* Build configuration list for PBXProject "AugmentedRealityNavigator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B1136F4C17221A7C00AE97E2;
+			productRefGroup = B1136F5617221A7C00AE97E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1136F5417221A7C00AE97E2 /* AugmentedRealityNavigator */,
+				B1136F7A17221A7C00AE97E2 /* AugmentedRealityNavigatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1136F5317221A7C00AE97E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1136F6317221A7C00AE97E2 /* InfoPlist.strings in Resources */,
+				B1136F6B17221A7C00AE97E2 /* Default.png in Resources */,
+				B1136F6D17221A7C00AE97E2 /* Default@2x.png in Resources */,
+				B1136F6F17221A7C00AE97E2 /* Default-568h@2x.png in Resources */,
+				B1136FA71722205400AE97E2 /* pARkViewController_iPhone.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1136F7817221A7C00AE97E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1136F8717221A7C00AE97E2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B1136F7917221A7C00AE97E2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1136F5117221A7C00AE97E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1136F6517221A7C00AE97E2 /* main.m in Sources */,
+				B1136F6917221A7C00AE97E2 /* MPAppDelegate.m in Sources */,
+				B1136F7517221A7C00AE97E2 /* MPViewController.m in Sources */,
+				B1136F9717221AA600AE97E2 /* ARView.m in Sources */,
+				B1136F9817221AA600AE97E2 /* PlaceOfInterest.m in Sources */,
+				B1136FAA172222A600AE97E2 /* MPGetPOI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1136F7617221A7C00AE97E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1136F8A17221A7C00AE97E2 /* AugmentedRealityNavigatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1136F8117221A7C00AE97E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1136F5417221A7C00AE97E2 /* AugmentedRealityNavigator */;
+			targetProxy = B1136F8017221A7C00AE97E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1136F6117221A7C00AE97E2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1136F6217221A7C00AE97E2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B1136F8517221A7C00AE97E2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1136F8617221A7C00AE97E2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1136F8B17221A7C00AE97E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B1136F8C17221A7C00AE97E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1136F8E17221A7C00AE97E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AugmentedRealityNavigator/AugmentedRealityNavigator-Prefix.pch";
+				INFOPLIST_FILE = "AugmentedRealityNavigator/AugmentedRealityNavigator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B1136F8F17221A7C00AE97E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AugmentedRealityNavigator/AugmentedRealityNavigator-Prefix.pch";
+				INFOPLIST_FILE = "AugmentedRealityNavigator/AugmentedRealityNavigator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B1136F9117221A7C00AE97E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AugmentedRealityNavigator.app/AugmentedRealityNavigator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AugmentedRealityNavigator/AugmentedRealityNavigator-Prefix.pch";
+				INFOPLIST_FILE = "AugmentedRealityNavigatorTests/AugmentedRealityNavigatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B1136F9217221A7C00AE97E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AugmentedRealityNavigator.app/AugmentedRealityNavigator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AugmentedRealityNavigator/AugmentedRealityNavigator-Prefix.pch";
+				INFOPLIST_FILE = "AugmentedRealityNavigatorTests/AugmentedRealityNavigatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1136F5017221A7C00AE97E2 /* Build configuration list for PBXProject "AugmentedRealityNavigator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1136F8B17221A7C00AE97E2 /* Debug */,
+				B1136F8C17221A7C00AE97E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1136F8D17221A7C00AE97E2 /* Build configuration list for PBXNativeTarget "AugmentedRealityNavigator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1136F8E17221A7C00AE97E2 /* Debug */,
+				B1136F8F17221A7C00AE97E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B1136F9017221A7C00AE97E2 /* Build configuration list for PBXNativeTarget "AugmentedRealityNavigatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1136F9117221A7C00AE97E2 /* Debug */,
+				B1136F9217221A7C00AE97E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1136F4D17221A7C00AE97E2 /* Project object */;
+}
