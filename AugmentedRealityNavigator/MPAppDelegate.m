@@ -15,9 +15,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UINavigationController *nav=[[UINavigationController alloc] init];
     _viewController = [[MPViewController alloc] initWithNibName:@"pARkViewController_iPhone" bundle:nil];
-	
-	self.window.rootViewController = self.viewController;
+	[nav pushViewController:_viewController animated:NO];
+	self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     return YES;
 }

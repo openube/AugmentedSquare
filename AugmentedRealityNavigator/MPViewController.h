@@ -11,11 +11,14 @@
 #import "ARView.h"
 #import <CoreLocation/CoreLocation.h>
 #import "MPGetPOI.h"
+#import "MPDetailPOIViewController.h"
 
 @interface MPViewController : UIViewController<CLLocationManagerDelegate>
 {
     CLLocationManager* manager;
     MPGetPOI* poiGetter;
     ARView *arView;
+    
+    NSDictionary* POIList;
 }
 @end

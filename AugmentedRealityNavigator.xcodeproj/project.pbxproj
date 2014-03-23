@@ -33,6 +33,7 @@
 		B1136FA71722205400AE97E2 /* pARkViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1136FA61722205400AE97E2 /* pARkViewController_iPhone.xib */; };
 		B1136FAA172222A600AE97E2 /* MPGetPOI.m in Sources */ = {isa = PBXBuildFile; fileRef = B1136FA9172222A600AE97E2 /* MPGetPOI.m */; };
 		B1136FB01722FAB000AE97E2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1136FAF1722FAB000AE97E2 /* MapKit.framework */; };
+		DEDE127318DF488500FB7BAC /* MPDetailPOIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDE127218DF488500FB7BAC /* MPDetailPOIViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,8 @@
 		B1136FA8172222A600AE97E2 /* MPGetPOI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGetPOI.h; sourceTree = "<group>"; };
 		B1136FA9172222A600AE97E2 /* MPGetPOI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPGetPOI.m; sourceTree = "<group>"; };
 		B1136FAF1722FAB000AE97E2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DEDE127118DF488500FB7BAC /* MPDetailPOIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDetailPOIViewController.h; sourceTree = "<group>"; };
+		DEDE127218DF488500FB7BAC /* MPDetailPOIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDetailPOIViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,8 @@
 				B1136F6817221A7C00AE97E2 /* MPAppDelegate.m */,
 				B1136F7317221A7C00AE97E2 /* MPViewController.h */,
 				B1136F7417221A7C00AE97E2 /* MPViewController.m */,
+				DEDE127118DF488500FB7BAC /* MPDetailPOIViewController.h */,
+				DEDE127218DF488500FB7BAC /* MPDetailPOIViewController.m */,
 				B1136FA61722205400AE97E2 /* pARkViewController_iPhone.xib */,
 				B1136F5F17221A7C00AE97E2 /* Supporting Files */,
 			);
@@ -328,6 +333,7 @@
 				B1136F7517221A7C00AE97E2 /* MPViewController.m in Sources */,
 				B1136F9717221AA600AE97E2 /* ARView.m in Sources */,
 				B1136F9817221AA600AE97E2 /* PlaceOfInterest.m in Sources */,
+				DEDE127318DF488500FB7BAC /* MPDetailPOIViewController.m in Sources */,
 				B1136FAA172222A600AE97E2 /* MPGetPOI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

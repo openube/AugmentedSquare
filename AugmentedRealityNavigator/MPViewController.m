@@ -23,6 +23,8 @@
     [manager startUpdatingLocation];
     
     arView = (ARView *)self.view;
+    
+    self.title=@"POI List";
 
 }
 
@@ -39,21 +41,21 @@
 	[arView stop];
 }
 
--(void) decodeResult:(NSDictionary *)POIList{
+-(void) decodeResult:(NSDictionary *)POIList_{
     
     
     NSMutableArray *POINameList=[[NSMutableArray alloc] init];
-    for (int i=0; i<[[[POIList objectForKey:@"response"] objectForKey:@"venues"] count]; i++) {
-        [POINameList addObject:[[[[POIList objectForKey:@"response"] objectForKey:@"venues"] objectAtIndex:i] objectForKey:@"name"]];
+    for (int i=0; i<[[[POIList_ objectForKey:@"response"] objectForKey:@"venues"] count]; i++) {
+        [POINameList addObject:[[[[POIList_ objectForKey:@"response"] objectForKey:@"venues"] objectAtIndex:i] objectForKey:@"name"]];
     }
     
-    NSUInteger size=[[[POIList objectForKey:@"response"] objectForKey:@"venues"] count];
+    NSUInteger size=[[[POIList_ objectForKey:@"response"] objectForKey:@"venues"] count];
     CLLocationCoordinate2D poiCoords[size];
 
     for (int i=0; i<size; i++) {
         CLLocationCoordinate2D loc;
-        loc.latitude=[[[[[[POIList objectForKey:@"response"] objectForKey:@"venues"] objectAtIndex:i] objectForKey:@"location"]objectForKey:@"lat"]doubleValue];
-        loc.longitude=[[[[[[POIList objectForKey:@"response"] objectForKey:@"venues"] objectAtIndex:i] objectForKey:@"location"]objectForKey:@"lng"]doubleValue];
+        loc.latitude=[[[[[[POIList_ objectForKey:@"response"] objectForKey:@"venues"] objectAtIndex:i] objectForKey:@"location"]objectForKey:@"lat"]doubleValue];
+        loc.longitude=[[[[[[POIList_ objectForKey:@"response"] objectForKey:@"venues"] objectAtIndex:i] objectForKey:@"location"]objectForKey:@"lng"]doubleValue];
         
         poiCoords[i]=loc;
         
@@ -65,32 +67,38 @@
     
 	NSMutableArray *placesOfInterest = [NSMutableArray arrayWithCapacity:numPois];
 	for (int i = 0; i < numPois; i++) {
-		UILabel *label = [[UILabel alloc] init];
-		label.adjustsFontSizeToFitWidth = NO;
-		label.opaque = NO;
-		label.backgroundColor = [UIColor colorWithRed:0.1f green:0.1f blue:0.1f alpha:0.5f];
-		label.center = CGPointMake(200.0f, 200.0f);
-		label.textAlignment = NSTextAlignmentCenter;
-		label.textColor = [UIColor whiteColor];
-		label.text = [POINameList objectAtIndex:i];
-		CGSize size = [label.text sizeWithFont:label.font];
-		label.bounds = CGRectMake(0.0f, 0.0f, size.width, size.height);
-        label.transform = CGAffineTransformMakeRotation(M_PI_2*-0.5);
-		PlaceOfInterest *poi = [PlaceOfInterest placeOfInterestWithView:label at:[[CLLocation alloc] initWithLatitude:poiCoords[i].latitude longitude:poiCoords[i].longitude]];
+
+		UIButton *button=[UIButton buttonWithType:UIButtonTypeCustom];
+        [button setTitle:[POINameList objectAtIndex:i] forState:UIControlStateNormal];
+        button.backgroundColor = [UIColor colorWithRed:0.1f green:0.1f blue:0.1f alpha:0.5f];
+        button.tag=i;
+        [button addTarget:self action:@selector(pressedPOI:) forControlEvents:UIControlEventTouchUpInside];
+		button.center = CGPointMake(200.0f, 200.0f);
+		[button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+		CGSize size = [button.titleLabel.text sizeWithFont:button.titleLabel.font];
+		button.bounds = CGRectMake(0.0f, 0.0f, size.width, size.height);
+        button.transform = CGAffineTransformMakeRotation(M_PI_2*-0.5);
+
+        
+        PlaceOfInterest *poi = [PlaceOfInterest placeOfInterestWithView:button at:[[CLLocation alloc] initWithLatitude:poiCoords[i].latitude longitude:poiCoords[i].longitude]];
 		[placesOfInterest insertObject:poi atIndex:i];
 	}
 	[arView setPlacesOfInterest:placesOfInterest];
 }
 
--(void) pressed{
-
+-(void) pressedPOI:(UIButton *)sender{
+    MPDetailPOIViewController * detailVC=[[MPDetailPOIViewController alloc] init];
+    detailVC.title=[[[[POIList objectForKey:@"response"] objectForKey:@"venues"] objectAtIndex:sender.tag] objectForKey:@"name"];
+    
+    [self.navigationController pushViewController:detailVC animated:YES];
 
 }
 
 -(void)locationManager:(CLLocationManager *)manager_ didUpdateLocations:(NSArray *)locations{
     if(locations.count)
     [MPGetPOI requestPOIFor:manager_.location.coordinate complentionHandler:^(NSDictionary *dict) {
-        [self decodeResult:dict];
+        POIList=dict;
+        [self decodeResult:POIList];
     }];
     
     [manager_ stopUpdatingLocation];
