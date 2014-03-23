@@ -10,13 +10,13 @@
 #import "PlaceOfInterest.h"
 #import "ARView.h"
 #import <CoreLocation/CoreLocation.h>
-#import "MPGetPOI.h"
+#import "MPFourSquareWrapper.h"
 #import "MPDetailPOIViewController.h"
 
 @interface MPViewController : UIViewController<CLLocationManagerDelegate>
 {
     CLLocationManager* manager;
-    MPGetPOI* poiGetter;
+    MPFourSquareWrapper* poiGetter;
     ARView *arView;
     
     NSDictionary* POIList;

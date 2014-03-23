@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MPDetailPOIViewController : UIViewController
-
+@property (nonatomic,readwrite) NSString *placeID;
 @end

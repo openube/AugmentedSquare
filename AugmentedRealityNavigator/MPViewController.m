@@ -89,14 +89,14 @@
 -(void) pressedPOI:(UIButton *)sender{
     MPDetailPOIViewController * detailVC=[[MPDetailPOIViewController alloc] init];
     detailVC.title=[[[[POIList objectForKey:@"response"] objectForKey:@"venues"] objectAtIndex:sender.tag] objectForKey:@"name"];
-    
+    detailVC.placeID=[[[[POIList objectForKey:@"response"] objectForKey:@"venues"] objectAtIndex:sender.tag] objectForKey:@"id"];
     [self.navigationController pushViewController:detailVC animated:YES];
 
 }
 
 -(void)locationManager:(CLLocationManager *)manager_ didUpdateLocations:(NSArray *)locations{
     if(locations.count)
-    [MPGetPOI requestPOIFor:manager_.location.coordinate complentionHandler:^(NSDictionary *dict) {
+    [MPFourSquareWrapper requestPOIFor:manager_.location.coordinate complentionHandler:^(NSDictionary *dict) {
         POIList=dict;
         [self decodeResult:POIList];
     }];
