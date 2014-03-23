@@ -31,9 +31,9 @@
 		B1136FA317221AFF00AE97E2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1136FA217221AFF00AE97E2 /* AVFoundation.framework */; };
 		B1136FA517221C4100AE97E2 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1136FA417221C4100AE97E2 /* AssetsLibrary.framework */; };
 		B1136FA71722205400AE97E2 /* pARkViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1136FA61722205400AE97E2 /* pARkViewController_iPhone.xib */; };
-		B1136FAA172222A600AE97E2 /* MPFourSquareWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B1136FA9172222A600AE97E2 /* MPFourSquareWrapper.m */; };
 		B1136FB01722FAB000AE97E2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1136FAF1722FAB000AE97E2 /* MapKit.framework */; };
 		DEDE127318DF488500FB7BAC /* MPDetailPOIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDE127218DF488500FB7BAC /* MPDetailPOIViewController.m */; };
+		DEDE127618DF73ED00FB7BAC /* MPFourSquareWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDE127518DF73ED00FB7BAC /* MPFourSquareWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,11 +79,11 @@
 		B1136FA217221AFF00AE97E2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B1136FA417221C4100AE97E2 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		B1136FA61722205400AE97E2 /* pARkViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pARkViewController_iPhone.xib; sourceTree = "<group>"; };
-		B1136FA8172222A600AE97E2 /* MPFourSquareWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPFourSquareWrapper.h; sourceTree = "<group>"; };
-		B1136FA9172222A600AE97E2 /* MPFourSquareWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPFourSquareWrapper.m; sourceTree = "<group>"; };
 		B1136FAF1722FAB000AE97E2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DEDE127118DF488500FB7BAC /* MPDetailPOIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDetailPOIViewController.h; sourceTree = "<group>"; };
 		DEDE127218DF488500FB7BAC /* MPDetailPOIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDetailPOIViewController.m; sourceTree = "<group>"; };
+		DEDE127418DF73ED00FB7BAC /* MPFourSquareWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPFourSquareWrapper.h; path = FoursWrapper/MPFourSquareWrapper.h; sourceTree = "<group>"; };
+		DEDE127518DF73ED00FB7BAC /* MPFourSquareWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPFourSquareWrapper.m; path = FoursWrapper/MPFourSquareWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +120,8 @@
 		B1136F4C17221A7C00AE97E2 = {
 			isa = PBXGroup;
 			children = (
-				B1136FA8172222A600AE97E2 /* MPFourSquareWrapper.h */,
-				B1136FA9172222A600AE97E2 /* MPFourSquareWrapper.m */,
+				DEDE127418DF73ED00FB7BAC /* MPFourSquareWrapper.h */,
+				DEDE127518DF73ED00FB7BAC /* MPFourSquareWrapper.m */,
 				B1136F9917221AAB00AE97E2 /* AR */,
 				B1136F5E17221A7C00AE97E2 /* AugmentedRealityNavigator */,
 				B1136F8217221A7C00AE97E2 /* AugmentedRealityNavigatorTests */,
@@ -334,7 +334,7 @@
 				B1136F9717221AA600AE97E2 /* ARView.m in Sources */,
 				B1136F9817221AA600AE97E2 /* PlaceOfInterest.m in Sources */,
 				DEDE127318DF488500FB7BAC /* MPDetailPOIViewController.m in Sources */,
-				B1136FAA172222A600AE97E2 /* MPFourSquareWrapper.m in Sources */,
+				DEDE127618DF73ED00FB7BAC /* MPFourSquareWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
