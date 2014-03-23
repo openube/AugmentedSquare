@@ -1,13 +1,9 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
-#import "Header.h"
-@interface MPGetPOI : NSObject{
-    
-    NSMutableDictionary* POI;
 
-}
+@interface MPGetPOI : NSObject
 
 
--(void) requestPOIFor:(CLLocationCoordinate2D)coordinate;
++ (void) requestPOIFor:(CLLocationCoordinate2D)coordinate complentionHandler:(void(^)(NSDictionary *))complentionHandler;
 
 @end

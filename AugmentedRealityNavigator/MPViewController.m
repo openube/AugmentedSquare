@@ -7,6 +7,7 @@
 //
 
 #import "MPViewController.h"
+
 @interface MPViewController ()
 
 @end
@@ -18,35 +19,11 @@
     [super viewDidLoad];
     manager=[[CLLocationManager alloc] init];
     manager.desiredAccuracy=kCLLocationAccuracyBest;
+    manager.delegate=self;
     [manager startUpdatingLocation];
     
     arView = (ARView *)self.view;
-	// Create array of hard-coded places-of-interest, in this case some famous parks
-   
 
-	    
-    get=[[MPGetPOI alloc] init];
-    [get requestPOIFor:manager.location.coordinate];
-    
-    UIButton * btn = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-    btn.frame = CGRectMake(0, 0, 50, 50);
-     [self.view addSubview:btn];
-     
-     [btn addTarget:self action:@selector(pressed) forControlEvents:UIControlEventTouchDown];
-
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(decodeResult)
-                                                 name:@"Request Done"
-                                               object:nil];
-
-
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -62,7 +39,7 @@
 	[arView stop];
 }
 
--(void) decodeResult{
+-(void) decodeResult:(NSDictionary *)POIList{
     
     
     NSMutableArray *POINameList=[[NSMutableArray alloc] init];
@@ -70,7 +47,7 @@
         [POINameList addObject:[[[[POIList objectForKey:@"response"] objectForKey:@"venues"] objectAtIndex:i] objectForKey:@"name"]];
     }
     
-    int size=[[[POIList objectForKey:@"response"] objectForKey:@"venues"] count];
+    NSUInteger size=[[[POIList objectForKey:@"response"] objectForKey:@"venues"] count];
     CLLocationCoordinate2D poiCoords[size];
 
     for (int i=0; i<size; i++) {
@@ -84,7 +61,7 @@
     
 	
     
-    int numPois = sizeof(poiCoords) / sizeof(CLLocationCoordinate2D);
+    NSInteger numPois = sizeof(poiCoords) / sizeof(CLLocationCoordinate2D);
     
 	NSMutableArray *placesOfInterest = [NSMutableArray arrayWithCapacity:numPois];
 	for (int i = 0; i < numPois; i++) {
@@ -103,18 +80,21 @@
 		[placesOfInterest insertObject:poi atIndex:i];
 	}
 	[arView setPlacesOfInterest:placesOfInterest];
-    NSLog(@"Done");
 }
 
 -(void) pressed{
-    CLLocationCoordinate2D ge;
-    ge.latitude=44.36;
-    ge.longitude=9.18099999999999;
-    [get requestPOIFor:ge];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(decodeResult)
-                                                 name:@"Request Done"
-                                               object:nil];
 
+
+}
+
+-(void)locationManager:(CLLocationManager *)manager_ didUpdateLocations:(NSArray *)locations{
+    if(locations.count)
+    [MPGetPOI requestPOIFor:manager_.location.coordinate complentionHandler:^(NSDictionary *dict) {
+        [self decodeResult:dict];
+    }];
+    
+    [manager_ stopUpdatingLocation];
+    
+    [NSTimer timerWithTimeInterval:120 target:manager_ selector:@selector(startUpdatingLocation) userInfo:nil repeats:NO];
 }
 @end

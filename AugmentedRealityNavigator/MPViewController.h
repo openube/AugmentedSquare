@@ -12,10 +12,10 @@
 #import <CoreLocation/CoreLocation.h>
 #import "MPGetPOI.h"
 
-@interface MPViewController : UIViewController
+@interface MPViewController : UIViewController<CLLocationManagerDelegate>
 {
     CLLocationManager* manager;
-    MPGetPOI* get;
+    MPGetPOI* poiGetter;
     ARView *arView;
 }
 @end

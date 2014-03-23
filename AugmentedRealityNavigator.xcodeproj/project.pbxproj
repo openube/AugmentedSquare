@@ -80,7 +80,6 @@
 		B1136FA61722205400AE97E2 /* pARkViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pARkViewController_iPhone.xib; sourceTree = "<group>"; };
 		B1136FA8172222A600AE97E2 /* MPGetPOI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGetPOI.h; sourceTree = "<group>"; };
 		B1136FA9172222A600AE97E2 /* MPGetPOI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPGetPOI.m; sourceTree = "<group>"; };
-		B1136FAC1722257900AE97E2 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		B1136FAF1722FAB000AE97E2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -118,16 +117,8 @@
 		B1136F4C17221A7C00AE97E2 = {
 			isa = PBXGroup;
 			children = (
-				B1136FAF1722FAB000AE97E2 /* MapKit.framework */,
-				B1136FAC1722257900AE97E2 /* Header.h */,
 				B1136FA8172222A600AE97E2 /* MPGetPOI.h */,
 				B1136FA9172222A600AE97E2 /* MPGetPOI.m */,
-				B1136FA417221C4100AE97E2 /* AssetsLibrary.framework */,
-				B1136FA217221AFF00AE97E2 /* AVFoundation.framework */,
-				B1136FA017221AF600AE97E2 /* CoreMotion.framework */,
-				B1136F9E17221AE700AE97E2 /* QuartzCore.framework */,
-				B1136F9C17221ADE00AE97E2 /* OpenGLES.framework */,
-				B1136F9A17221AD400AE97E2 /* CoreLocation.framework */,
 				B1136F9917221AAB00AE97E2 /* AR */,
 				B1136F5E17221A7C00AE97E2 /* AugmentedRealityNavigator */,
 				B1136F8217221A7C00AE97E2 /* AugmentedRealityNavigatorTests */,
@@ -148,6 +139,13 @@
 		B1136F5717221A7C00AE97E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B1136FAF1722FAB000AE97E2 /* MapKit.framework */,
+				B1136FA417221C4100AE97E2 /* AssetsLibrary.framework */,
+				B1136FA217221AFF00AE97E2 /* AVFoundation.framework */,
+				B1136FA017221AF600AE97E2 /* CoreMotion.framework */,
+				B1136F9E17221AE700AE97E2 /* QuartzCore.framework */,
+				B1136F9C17221ADE00AE97E2 /* OpenGLES.framework */,
+				B1136F9A17221AD400AE97E2 /* CoreLocation.framework */,
 				B1136F5817221A7C00AE97E2 /* UIKit.framework */,
 				B1136F5A17221A7C00AE97E2 /* Foundation.framework */,
 				B1136F5C17221A7C00AE97E2 /* CoreGraphics.framework */,
@@ -259,6 +257,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = MP;
+				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = MPow;
 			};
@@ -434,6 +433,7 @@
 				GCC_PREFIX_HEADER = "AugmentedRealityNavigator/AugmentedRealityNavigator-Prefix.pch";
 				INFOPLIST_FILE = "AugmentedRealityNavigator/AugmentedRealityNavigator-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E7EEF2D5-EB32-41E1-A8C4-D0A5ACC640CC";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -445,6 +445,7 @@
 				GCC_PREFIX_HEADER = "AugmentedRealityNavigator/AugmentedRealityNavigator-Prefix.pch";
 				INFOPLIST_FILE = "AugmentedRealityNavigator/AugmentedRealityNavigator-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E7EEF2D5-EB32-41E1-A8C4-D0A5ACC640CC";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -502,6 +503,7 @@
 				B1136F8F17221A7C00AE97E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1136F9017221A7C00AE97E2 /* Build configuration list for PBXNativeTarget "AugmentedRealityNavigatorTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +512,7 @@
 				B1136F9217221A7C00AE97E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
