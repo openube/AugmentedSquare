@@ -78,7 +78,8 @@
 		CGSize size = [button.titleLabel.text sizeWithFont:button.titleLabel.font];
 		button.bounds = CGRectMake(0.0f, 0.0f, size.width, size.height);
         button.transform = CGAffineTransformMakeRotation(M_PI_2*-0.5);
-
+        if(i+1==numPois)
+        [self pressedPOI:button];
         
         PlaceOfInterest *poi = [PlaceOfInterest placeOfInterestWithView:button at:[[CLLocation alloc] initWithLatitude:poiCoords[i].latitude longitude:poiCoords[i].longitude]];
 		[placesOfInterest insertObject:poi atIndex:i];
