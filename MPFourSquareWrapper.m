@@ -33,9 +33,14 @@
     [MPFourSquareWrapper requestForType:@"venues" method:@"search" params:@{@"ll":[NSString stringWithFormat:@"%f,%f",coordinate.latitude,coordinate.longitude]} complentionHandler:complentionHandler];
 }
 
-+ (void) requestPlacePhotoForPlaceID:(NSString *)placeID complentionHandler:(void (^)(NSDictionary *, NSArray *))complentionHandler{
-   // [MPFourSquareWrpper requestForType:@"venues" method:placeID params:nil complentionHandler:complentionHandler];
++ (void) requestPlaceDetailForPlaceID:(NSString *)placeID complentionHandler:(void (^)(NSDictionary *, MPFoursquareVenue *))complentionHandler{
+    
+    [MPFourSquareWrapper requestForType:@"venues" method:placeID params:nil complentionHandler:^(NSDictionary *response) {
+        complentionHandler(response,[[MPFoursquareVenue alloc] initWithDictionary:response]);
+    }];
+}
 
++ (void) requestPlacePhotoForPlaceID:(NSString *)placeID complentionHandler:(void (^)(NSDictionary *, NSArray *))complentionHandler{
     
     [MPFourSquareWrapper requestForType:[@"venues/" stringByAppendingString:placeID] method:@"photos" params:nil complentionHandler:^(NSDictionary *response) {
         

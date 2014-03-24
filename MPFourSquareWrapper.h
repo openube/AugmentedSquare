@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
+#import "MPFoursquareVenue.h"
 
 @interface MPFourSquareWrapper : NSObject
 
@@ -7,6 +8,10 @@
 
 
 + (void) requestPOIFor:(CLLocationCoordinate2D)coordinate complentionHandler:(void(^)(NSDictionary *response))complentionHandler;
+
+
++ (void) requestPlaceDetailForPlaceID:(NSString *)placeID complentionHandler:(void(^)(NSDictionary *response,MPFoursquareVenue *venue))complentionHandler;
+
 
 + (void) requestPlacePhotoForPlaceID:(NSString *)placeID complentionHandler:(void(^)(NSDictionary *response,NSArray *photoUrls))complentionHandler;
 

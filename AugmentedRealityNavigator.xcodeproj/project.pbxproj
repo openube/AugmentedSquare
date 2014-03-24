@@ -33,8 +33,8 @@
 		B1136FA71722205400AE97E2 /* pARkViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1136FA61722205400AE97E2 /* pARkViewController_iPhone.xib */; };
 		B1136FB01722FAB000AE97E2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1136FAF1722FAB000AE97E2 /* MapKit.framework */; };
 		DEDE127318DF488500FB7BAC /* MPDetailPOIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDE127218DF488500FB7BAC /* MPDetailPOIViewController.m */; };
-		DEDE127618DF73ED00FB7BAC /* MPFourSquareWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDE127518DF73ED00FB7BAC /* MPFourSquareWrapper.m */; };
 		DEDE127918DF8CFE00FB7BAC /* MPFoursquareVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDE127818DF8CFE00FB7BAC /* MPFoursquareVenue.m */; };
+		DEDE127C18E0223800FB7BAC /* MPFourSquareWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDE127B18E0223800FB7BAC /* MPFourSquareWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,10 +83,10 @@
 		B1136FAF1722FAB000AE97E2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DEDE127118DF488500FB7BAC /* MPDetailPOIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDetailPOIViewController.h; sourceTree = "<group>"; };
 		DEDE127218DF488500FB7BAC /* MPDetailPOIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDetailPOIViewController.m; sourceTree = "<group>"; };
-		DEDE127418DF73ED00FB7BAC /* MPFourSquareWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPFourSquareWrapper.h; path = FoursWrapper/MPFourSquareWrapper.h; sourceTree = "<group>"; };
-		DEDE127518DF73ED00FB7BAC /* MPFourSquareWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPFourSquareWrapper.m; path = FoursWrapper/MPFourSquareWrapper.m; sourceTree = "<group>"; };
 		DEDE127718DF8CFE00FB7BAC /* MPFoursquareVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPFoursquareVenue.h; sourceTree = "<group>"; };
 		DEDE127818DF8CFE00FB7BAC /* MPFoursquareVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPFoursquareVenue.m; sourceTree = "<group>"; };
+		DEDE127A18E0223800FB7BAC /* MPFourSquareWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPFourSquareWrapper.h; sourceTree = "<group>"; };
+		DEDE127B18E0223800FB7BAC /* MPFourSquareWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPFourSquareWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +123,8 @@
 		B1136F4C17221A7C00AE97E2 = {
 			isa = PBXGroup;
 			children = (
-				DEDE127418DF73ED00FB7BAC /* MPFourSquareWrapper.h */,
-				DEDE127518DF73ED00FB7BAC /* MPFourSquareWrapper.m */,
+				DEDE127A18E0223800FB7BAC /* MPFourSquareWrapper.h */,
+				DEDE127B18E0223800FB7BAC /* MPFourSquareWrapper.m */,
 				DEDE127718DF8CFE00FB7BAC /* MPFoursquareVenue.h */,
 				DEDE127818DF8CFE00FB7BAC /* MPFoursquareVenue.m */,
 				B1136F9917221AAB00AE97E2 /* AR */,
@@ -336,11 +336,11 @@
 				B1136F6517221A7C00AE97E2 /* main.m in Sources */,
 				B1136F6917221A7C00AE97E2 /* MPAppDelegate.m in Sources */,
 				B1136F7517221A7C00AE97E2 /* MPViewController.m in Sources */,
+				DEDE127C18E0223800FB7BAC /* MPFourSquareWrapper.m in Sources */,
 				DEDE127918DF8CFE00FB7BAC /* MPFoursquareVenue.m in Sources */,
 				B1136F9717221AA600AE97E2 /* ARView.m in Sources */,
 				B1136F9817221AA600AE97E2 /* PlaceOfInterest.m in Sources */,
 				DEDE127318DF488500FB7BAC /* MPDetailPOIViewController.m in Sources */,
-				DEDE127618DF73ED00FB7BAC /* MPFourSquareWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
