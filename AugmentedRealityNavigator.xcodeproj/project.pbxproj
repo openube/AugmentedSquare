@@ -32,9 +32,9 @@
 		B1136FA517221C4100AE97E2 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1136FA417221C4100AE97E2 /* AssetsLibrary.framework */; };
 		B1136FA71722205400AE97E2 /* pARkViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1136FA61722205400AE97E2 /* pARkViewController_iPhone.xib */; };
 		B1136FB01722FAB000AE97E2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1136FAF1722FAB000AE97E2 /* MapKit.framework */; };
+		DE63A6E218E083A60038407D /* MPFoursquareVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = DE63A6DF18E083A60038407D /* MPFoursquareVenue.m */; };
+		DE63A6E318E083A60038407D /* MPFourSquareWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DE63A6E118E083A60038407D /* MPFourSquareWrapper.m */; };
 		DEDE127318DF488500FB7BAC /* MPDetailPOIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDE127218DF488500FB7BAC /* MPDetailPOIViewController.m */; };
-		DEDE127918DF8CFE00FB7BAC /* MPFoursquareVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDE127818DF8CFE00FB7BAC /* MPFoursquareVenue.m */; };
-		DEDE127C18E0223800FB7BAC /* MPFourSquareWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDE127B18E0223800FB7BAC /* MPFourSquareWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,12 +81,12 @@
 		B1136FA417221C4100AE97E2 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		B1136FA61722205400AE97E2 /* pARkViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pARkViewController_iPhone.xib; sourceTree = "<group>"; };
 		B1136FAF1722FAB000AE97E2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DE63A6DE18E083A60038407D /* MPFoursquareVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPFoursquareVenue.h; path = FoursWrapper/MPFoursquareVenue.h; sourceTree = "<group>"; };
+		DE63A6DF18E083A60038407D /* MPFoursquareVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPFoursquareVenue.m; path = FoursWrapper/MPFoursquareVenue.m; sourceTree = "<group>"; };
+		DE63A6E018E083A60038407D /* MPFourSquareWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPFourSquareWrapper.h; path = FoursWrapper/MPFourSquareWrapper.h; sourceTree = "<group>"; };
+		DE63A6E118E083A60038407D /* MPFourSquareWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPFourSquareWrapper.m; path = FoursWrapper/MPFourSquareWrapper.m; sourceTree = "<group>"; };
 		DEDE127118DF488500FB7BAC /* MPDetailPOIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDetailPOIViewController.h; sourceTree = "<group>"; };
 		DEDE127218DF488500FB7BAC /* MPDetailPOIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDetailPOIViewController.m; sourceTree = "<group>"; };
-		DEDE127718DF8CFE00FB7BAC /* MPFoursquareVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPFoursquareVenue.h; sourceTree = "<group>"; };
-		DEDE127818DF8CFE00FB7BAC /* MPFoursquareVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPFoursquareVenue.m; sourceTree = "<group>"; };
-		DEDE127A18E0223800FB7BAC /* MPFourSquareWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPFourSquareWrapper.h; sourceTree = "<group>"; };
-		DEDE127B18E0223800FB7BAC /* MPFourSquareWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPFourSquareWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,10 +123,10 @@
 		B1136F4C17221A7C00AE97E2 = {
 			isa = PBXGroup;
 			children = (
-				DEDE127A18E0223800FB7BAC /* MPFourSquareWrapper.h */,
-				DEDE127B18E0223800FB7BAC /* MPFourSquareWrapper.m */,
-				DEDE127718DF8CFE00FB7BAC /* MPFoursquareVenue.h */,
-				DEDE127818DF8CFE00FB7BAC /* MPFoursquareVenue.m */,
+				DE63A6DE18E083A60038407D /* MPFoursquareVenue.h */,
+				DE63A6DF18E083A60038407D /* MPFoursquareVenue.m */,
+				DE63A6E018E083A60038407D /* MPFourSquareWrapper.h */,
+				DE63A6E118E083A60038407D /* MPFourSquareWrapper.m */,
 				B1136F9917221AAB00AE97E2 /* AR */,
 				B1136F5E17221A7C00AE97E2 /* AugmentedRealityNavigator */,
 				B1136F8217221A7C00AE97E2 /* AugmentedRealityNavigatorTests */,
@@ -334,10 +334,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1136F6517221A7C00AE97E2 /* main.m in Sources */,
+				DE63A6E218E083A60038407D /* MPFoursquareVenue.m in Sources */,
 				B1136F6917221A7C00AE97E2 /* MPAppDelegate.m in Sources */,
+				DE63A6E318E083A60038407D /* MPFourSquareWrapper.m in Sources */,
 				B1136F7517221A7C00AE97E2 /* MPViewController.m in Sources */,
-				DEDE127C18E0223800FB7BAC /* MPFourSquareWrapper.m in Sources */,
-				DEDE127918DF8CFE00FB7BAC /* MPFoursquareVenue.m in Sources */,
 				B1136F9717221AA600AE97E2 /* ARView.m in Sources */,
 				B1136F9817221AA600AE97E2 /* PlaceOfInterest.m in Sources */,
 				DEDE127318DF488500FB7BAC /* MPDetailPOIViewController.m in Sources */,
